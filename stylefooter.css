@@ -1,0 +1,138 @@
+
+footer{
+    position: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding-top: 40px;
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+h3{
+    color: white;
+}
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+/*REDES SOCIALES*/
+
+img.facebook{
+        width:50px;
+        height:50px;
+}
+img.instagram{
+    width:50px;
+    height:50px;
+    margin-left: 1rem;
+}
+img.youtube{
+    width:50px;
+    height:50px;
+    margin-left: 1rem;
+}
+img.twitter{
+    width:50px;
+    height:50px;
+    margin-left: 1rem;
+}
+img.linkedin{
+    width:50px;
+    height:50px;
+    margin-left: 1rem;
+}
+.footer-bottom{
+  background: #111;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+/* Hacer el footer responsive */
+@media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    .socials {
+      margin: 1rem 0;
+    }
+  }
+  
+  /* Ajustar tamaño de la fuente en dispositivos pequeños */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  /* Hacer el footer bottom responsive */
+  @media screen and (max-width: 768px) {
+    .footer-bottom p {
+      font-size: 12px;
+    }
+  }
+  
+  /* Ajustar tamaño de las imágenes de redes sociales en dispositivos pequeños */
+  @media screen and (max-width: 480px) {
+    .socials img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .footer-content{
+      width: 100vw;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .footer-content{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  /* FIN FOOTER*/

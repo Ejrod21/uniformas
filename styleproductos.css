@@ -1,0 +1,267 @@
+html, body {margin: 0; height: 100%}
+/*NUEVO BOUNCY ANIMACION*/
+.bouncy {
+    font-size : 3rem;
+    /* el font-size tiene rem para hacerlo responsive*/
+    /* font-size: 60px; */
+    text-align: center;
+    color: black;
+  }
+  .bouncing {
+    animation : rubberband 800ms alternate ease-out;
+  }
+  @keyframes rubberband {
+      0%{
+          transform: scaleX(1);
+      }
+      40%{
+          transform: scaleX(1.12) scaleY(0.75);
+      }
+      55%{
+          transform: scaleX(0.85) scaleY(1);
+      }
+      65%{
+          transform: scaleX(1.09) scaleY(0.85);
+      }
+      75%{
+          transform: scaleX(0.9)  scaleY(1);
+      }
+      90%{
+          transform: scaleX(1.05) scaleY(0.95);
+      }
+      100%{
+          transform: scaleX(1) scaleY(1);
+      }
+  }
+  /* FIN BOUNCY*/
+body{
+    /**nubes 
+    https://www.pexels.com/photo/photo-of-clouds-during-daytime-2088142/ **/
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url('../img/nubes.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  }
+
+  /** agregado**/
+  .barra-top {
+    margin: 0 auto;
+    /* primero arriba y abajo y auto para izquierda y dercha
+    separa un objeto con respecto a otros objetos*/
+    padding:0 1em;
+    /*adentro del centrado, va ahaber  alguna separación*/
+        }
+  /*media query*/
+    @media screen and (min-width:52em) {/*mínimo de desktop*/
+            .menu-top{
+                max-width:52em; /*tablet*/
+            }
+    }
+    /*fin media*/
+.menu-section{
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        width:100%;
+    }
+    .menusimple ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top:30px;
+        background: rgb(5, 5, 5);
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menusimple li a{
+         display: block;
+        text-decoration: none;
+        color:aliceblue;
+        padding: 25px;       
+      
+    }
+    .menusimple li{
+        flex: 1 0 auto;
+        text-align: center;
+    }
+  .main-nav{
+      margin-top: 30px;
+      background-color: rgb(145, 130, 130);
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .main-nav__logo{
+      width: 100px;
+      height: 120px;
+      float:left;
+  }
+  .main-nav__item a{
+      padding:0;
+      margin:0;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+  
+  }     
+  .main-nav li{
+      display: inline-block;
+      margin: 80px;
+  }
+  /*FIN MENU*/
+  /*MENU CSS*/
+  .uno{
+    font-size: 25px;
+  }
+  h2{
+    font-size: 20px;
+    color: black;
+  }
+  /*TEMAS DE FONT-SIZE, Y COLOR*/
+/*Estructura página de hombres*/
+.centrado {
+    margin: 0 auto;
+    padding: 0.1em;
+}
+.tarjeta a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+/* .tarjeta a:hover {
+    text-shadow: 3px 3px 8px black;
+} */
+.contenido-tarjeta {
+    padding: 1.4rem;
+}
+.contenido-tarjeta h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 95%;
+    
+}
+.contenido-tarjeta p {
+    color: black;
+    margin: 0px;
+    font-size: 20px;
+    
+}
+figure {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 350px;
+    height: 500px;
+
+}
+.tarjeta {
+    background-color: white;
+    margin-bottom: 7em;
+    max-width: 100%;
+    max-height: 100%;
+    width: 350px;
+    height: 500px;
+}
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+/* FIN DE PÁGINA DE HOMBRES*/
+
+@media screen and (max-width: 525px) {
+    .tarjetas {
+        justify-content: center;
+    }
+}
+/*MODAL*/
+.zoomimg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .zoomimg:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    height:80%;
+    max-width: 700px;
+  }
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #e595ec;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #fa85f0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
+  

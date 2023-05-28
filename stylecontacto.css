@@ -1,0 +1,235 @@
+html, body {margin: 0; height: 100%; width:100%;}
+/*NUEVO BOUNCY ANIMACION*/
+.bouncy {
+  font-size : 3rem;
+  /* el font-size tiene rem para hacerlo responsive*/
+  /* font-size: 60px; */
+  text-align: center;
+  color: black;
+}
+.bouncing {
+  animation : rubberband 800ms alternate ease-out;
+}
+@keyframes rubberband {
+    0%{
+        transform: scaleX(1);
+    }
+    40%{
+        transform: scaleX(1.12) scaleY(0.75);
+    }
+    55%{
+        transform: scaleX(0.85) scaleY(1);
+    }
+    65%{
+        transform: scaleX(1.09) scaleY(0.85);
+    }
+    75%{
+        transform: scaleX(0.9)  scaleY(1);
+    }
+    90%{
+        transform: scaleX(1.05) scaleY(0.95);
+    }
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+/* FIN BOUNCY*/
+body{
+    /**nubes 
+    https://www.pexels.com/photo/photo-of-clouds-during-daytime-2088142/ **/
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url('img/nubes.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+ 
+/*MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU*/
+/** agregado**/
+.barra-top {
+  margin: 0 auto;
+  /* primero arriba y abajo y auto para izquierda y dercha
+  separa un objeto con respecto a otros objetos*/
+  padding:0 1em;
+  /*adentro del centrado, va ahaber  alguna separación*/
+      }
+/*media query*/
+  @media screen and (min-width:52em) {/*mínimo de desktop*/
+          .menu-top{
+              max-width:52em; /*tablet*/
+          }
+  }
+  /*fin media*/
+.menu-section{
+      padding-bottom: 2em;
+      margin-bottom: 2em;
+      width:100%;
+  }
+  .menusimple ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      margin-top:30px;
+      background: rgb(5, 5, 5);
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .menusimple li a{
+       display: block;
+      text-decoration: none;
+      color:aliceblue;
+      padding: 25px;       
+    
+  }
+  .menusimple li{
+      flex: 1 0 auto;
+      text-align: center;
+  }
+
+  .uno{
+    font-size: 25px;
+  }
+    /*MENUUUUUUUUUUUUUUUUUUUU FINNNNNNNNNNNNNNNNNNNNN*/
+
+    /*FORMULARIO*/
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+.contact_form{	
+	width: 560px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px;
+  padding-right:30px; 
+  
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 100%;
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 100%;
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 
+  color:black;
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 100%;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #ab4493; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #ab4493;
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+/*FIN FORMULARIOOOOOO*/
+/*responsive*/
+
+@media screen and (max-width:375px) {
+  .contact_form {
+      width:300px; 
+  }
+}
+/*FALTA CONFIGURAR RESPONSIVE*/
+
+/*FINRESPONSIVE*/
+/**agregado**/
